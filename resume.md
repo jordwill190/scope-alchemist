@@ -23,6 +23,16 @@
 
 ---
 
+## CURRENT TOOLING SKILLS
+- Aha.io: Strategic planning abnd roadmap communication
+- GitHub: Software development and engineering Agile workload platform
+- CA Agile Central (Rally): Agile engineering workload platform
+- Figma: Visual product design & prototyping 
+- Miro: Collaborative discovery, systems thinking, and facilitation
+- Microsoft Co-pilot: AI productivity assitance / GenAI
+- Visual Studio Code: Code Editor / Lightweight IDE
+
+---
 ## PROFESSIONAL EXPERIENCE
 **Director, Technical Product Management**
 [Optum](https://www.optum.com/en/about-us.html) | 2019-Present
