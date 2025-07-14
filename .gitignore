@@ -1,0 +1,38 @@
+# OS-generated files
+.DS_Store
+Thumbs.db
+
+# Logs and temp files
+*.log
+*.tmp
+*.swp
+
+# Markdown editor files (e.g., Obsidian, Typora, VS Code)
+*.bak
+*.backup
+*.orig
+*.md~ 
+.vscode/
+.idea/
+
+# Build/output folders (if using static site generator like Jekyll, Hugo, etc.)
+_site/
+dist/
+public/
+build/
+
+# Node/npm (only if you use a static site tool)
+node_modules/
+
+# Compiled HTML or PDFs (if generated)
+*.html
+*.pdf
+
+# Secrets (shouldn't be here anyway, but just in case)
+.env
+*.key
+*.pem
+
+# Mac/Windows junk
+ehthumbs.db
+Icon?
