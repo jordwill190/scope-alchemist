@@ -2,7 +2,7 @@
 
 **Director of Technical Product Management | HPC Veteran | Infrastructure Whisperer | Chaos Tamer**
 
-📍 Earth (mostly) | 📧 jordwill.2205@gmail.com | 📞 ***-***-1675 | [linkedin.com/in/jor](https://www.linkedin.com/in/jordanna-williams-011579aa/)
+📍 Earth (mostly) | 📧 jordwill.2205@gmail.com | 📞 ***-***-1675 | 🔗 [LinkedIn](https://www.linkedin.com/in/jordanna-williams-011579aa/)  
 
 ---
 
