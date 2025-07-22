@@ -4,7 +4,7 @@
 > “Turning chaos into clarity with calm leadership and caffeinated strategy.”
 
 - 📧 jordwill.2205@gmail.com 
-- 📍 Earth (mostly)  
+- 📍 Nature Coast Florida, USA, Earth  
 - 🔗 [LinkedIn](https://www.linkedin.com/in/jordanna-williams-011579aa/) | [Resume](./resume.md) | [Projects](./projects.md)
 
 ---
