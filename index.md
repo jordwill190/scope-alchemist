@@ -5,7 +5,7 @@
 
 - 📧 jordwill.2205@gmail.com 
 - 📍 Earth (mostly)  
-- 🔗 [LinkedIn](https://www.linkedin.com/in/jordanna-williams-011579aa/){:target="_blank"} | [Resume](./resume.md) | [Projects](./projects.md)
+- 🔗 [LinkedIn](https://www.linkedin.com/in/jordanna-williams-011579aa/) | [Resume](./resume.md) | [Projects](./projects.md)
 
 ---
 
