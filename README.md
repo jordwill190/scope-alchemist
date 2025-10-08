@@ -11,7 +11,7 @@ HPC Veteran | Infrastructure Whisperer | Chaos Tamer
 
 ## 🧠 About Me
 
-Over the past 26 years, I've:
+Over the past 20 years, I've:
 - Created roadmaps that made engineers smile *and* made finance nod in approval
 - Built internal developer platforms used by thousands of engineers—without breaking production on a Friday
 - Led infrastructure and platform strategy across Fortune 5 and 49 orgs (yes, I’ve seen it all)
@@ -32,7 +32,7 @@ I specialize in:
 - Platform of platforms for engineering velocity
 - Centralized Account Management (Private & Public Cloud)
 - Application Health, Stabilty, and Performance Risk Assessment
-- Dedicated Consumer & Producer experience for resource management
+- Dedicated Consumer & Producer Experience for Resource & Workload Management
 - Internal Consumer & Producer Knowledge Management (GenAI & Docs) & Community (Q&A platform)
 - Result: 30k+ software developers onboarded, 3x faster provisioning, significantly less grumbling
 
