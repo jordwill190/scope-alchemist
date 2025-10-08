@@ -7,19 +7,19 @@
 ---
 
 ## TECHNICAL SYNOPSIS
-26 years of experience fixing what shouldn't have broken, translating executive vision into technical reality, and mentoring teams who speak more Bash, GoLang, Python, and IaC  than English. Proven leader across Fortune 5 and 49 enterprises, bridging the gap between R&D chaos and corporate scale with a calm demeanor and a whiteboard marker always at the ready.
+20+ years of experience fixing what shouldn't have broken, translating executive vision into technical reality, and mentoring teams who speak more Bash, GoLang, Python, and IaC  than English. Proven leader across Fortune 5 and 49 enterprises, bridging the gap between R&D chaos and corporate scale with a calm demeanor and a whiteboard marker always at the ready.
 
 ---
 
 ## CORE COMPETENCIES
-- High-Performance Compute Systems (HPC)
-- Infrastructure Architecture & Orchestration
-- Cross-functional Team Leadership (with optional therapy)
-- R&D & Manufacturing Systems Integration
+- Cross-functional (DevOps, Product, UX, Security) Team Leadership (with optional therapy)
 - IT Strategy, Governance & Budget Alchemy
 - Stakeholder Herding
 - Technical Product Management (a.k.a. Cat Herding 2.0)
 - Leverage AI tooling to accelerate delivery & enhance productivity
+- Infrastructure Architecture & Orchestration
+- R&D & Manufacturing Systems Integration
+- High-Performance Compute Systems (HPC)
 
 ---
 
