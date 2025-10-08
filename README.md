@@ -27,7 +27,7 @@ I specialize in:
 
 ## 🔧 Featured Projects
 
-### 🛠️ Internal Developer Platform (Optum Technology/Fortune 5)
+### 🛠️ HealthCare Platform, Internal Software Developer Platform (Optum Technology/Fortune 5)
 **Role:** Many, currently Director, Technical Product Management  
 - Platform of platforms for engineering velocity
 - Centralized Account Management (Private & Public Cloud)
