@@ -2,12 +2,12 @@
 
 **Director of Technical Product Management | HPC Veteran | Infrastructure Whisperer | Chaos Tamer**
 
-📍 Earth (mostly) | 📧 jordwill.2205@gmail.com | 📞 ***-***-1675 | 🔗 [LinkedIn](https://www.linkedin.com/in/jordanna-williams-011579aa/)  
+📍 Inglis, FL | 📧 jordwill.2205@gmail.com | 📞 ***-***-9118 | 🔗 [LinkedIn](https://www.linkedin.com/in/jordanna-williams-011579aa/)  
 
 ---
 
 ## TECHNICAL SYNOPSIS
-20+ years of experience fixing what shouldn't have broken, translating executive vision into technical reality, and mentoring teams who speak more Bash, GoLang, Python, and IaC  than English. Proven leader across Fortune 5 and 49 enterprises, bridging the gap between R&D chaos and corporate scale with a calm demeanor and a whiteboard marker always at the ready.
+20+ years of experience fixing what shouldn't have broken, translating executive vision into technical reality, and mentoring teams who speak more Bash, GoLang, Python, and IaC  than English. Proven leader across Fortune 5 and 49 enterprises, bridging the gap between R&D chaos and corporate scale with a calm demeanor and a whiteboard marker always at the ready. Recognized for driving innovation, governance, and measurable outcomes across Fortune 5 environments — including centralized developer portals, cloud account management, data insights, and GenAI-powered engineering platforms. Known as an “infrastructure whisperer and chaos tamer” who blends technical fluency, strategic vision, and human-centered leadership to deliver lasting impact.
 
 ---
 
@@ -37,8 +37,7 @@
 **Director, Technical Product Management**
 [Optum](https://www.optum.com/en/about-us.html) | 2019-Present
    *“Wrangling chaos with a roadmap and a tea.”*
-- Built and led a multi-region product team to define and deliver core development platforms used by 10k+ engineers.
-- Built and led a multi-region product team to define and deliver core development infrastructure platforms used by 10k+ engineers, including Critical Business Application teams.
+- Built and led a multi-region product team to define and deliver core development infrastructure platforms used by 30k+ engineers, including Critical Business Application teams.
 - Evangelized platform-as-a-product while managing technical debt like a Silicon Valley Marie Kondo.
 - Partnered across security, finance, and compliance groups without resorting to interpretive dance (usually).
 
@@ -49,7 +48,7 @@
 - Mentored a team of engineers to become self-sufficient (and only slightly sarcastic).
 - Built cross-functional bridges with app teams, security, and facilities (actual, not metaphorical).
 
-**Principal Solutions Engineer & Team Lead**
+**Principal IO Engineering & Team Lead**
 [Optum](https://www.optum.com/en/about-us.html)  | 2010–2012
    *"Designs the systems that can't go down - and makes sure they don't, even when everything else does."*
 - Designed and implemented scalable, high-availability infrastructure solutions for Tier 0 services supporting Fortune 5 business-critical applications ensuring 99.99%+ uptime
