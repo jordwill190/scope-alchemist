@@ -1,25 +1,37 @@
 # Resume — Jord Williams
 
-**Director of Technical Product Management | HPC Veteran | Infrastructure Whisperer | Chaos Tamer**
+**Principal Technical Program & Product Portfolio Management | HPC Veteran | Infrastructure Whisperer | Chaos Tamer**
 
 📍 Inglis, FL | 📧 jordwill.2205@gmail.com | 📞 ***-***-9118 | 🔗 [LinkedIn](https://www.linkedin.com/in/jordanna-williams-011579aa/)  
 
 ---
 
 ## TECHNICAL SYNOPSIS
-20+ years of experience fixing what shouldn't have broken, translating executive vision into technical reality, and mentoring teams who speak more Bash, GoLang, Python, and IaC  than English. Proven leader across Fortune 5 and 49 enterprises, bridging the gap between R&D chaos and corporate scale with a calm demeanor and a whiteboard marker always at the ready. Recognized for driving innovation, governance, and measurable outcomes across Fortune 5 environments — including centralized developer portals, cloud account management, data insights, and GenAI-powered engineering platforms. Known as an “infrastructure whisperer and chaos tamer” who blends technical fluency, strategic vision, and human-centered leadership to deliver lasting impact.
+Strategic and hands-on technology leader with 20+ years of experience driving complex infrastructure, security, and engineering initiatives across Fortune 5 and 49 enterprises. Proven ability to translate executive vision into actionable programs and projects that deliver measurable outcomes, operational resilience, and organizational alignment.
+
+Expert in leading large-scale infrastructure modernization, security and compliance programs, M&A integrations, data center migrations, and global HPC delivery—ensuring stability, scalability, and cost efficiency. Adept at bridging product, program, and project management disciplines to drive innovation, governance, and sustainable transformation.
+
+Recognized as an infrastructure whisperer and chaos tamer who blends technical fluency, portfolio strategy, and human-centered leadership to orchestrate complex initiatives—on time, on budget, and with teams that actually want to work together.
 
 ---
 
 ## CORE COMPETENCIES
-- Cross-functional (DevOps, Product, UX, Security) Team Leadership (with optional therapy)
-- IT Strategy, Governance & Budget Alchemy
-- Stakeholder Herding
-- Technical Product Management (a.k.a. Cat Herding 2.0)
-- Leverage AI tooling to accelerate delivery & enhance productivity
-- Infrastructure Architecture & Orchestration
-- R&D & Manufacturing Systems Integration
-- High-Performance Compute Systems (HPC)
+- Program, Product & Platform Leadership – Orchestrating complex initiatives across infrastructure, security, and engineering portfolios with measurable outcomes and minimal chaos
+- Cross-Functional Team Leadership (DevOps, Product, UX, Security) – Guiding diverse teams through ambiguity, transformation, and the occasional need for group therapy
+- Infrastructure & Architecture Strategy – Designing, modernizing, and governing hybrid, cloud, and HPC environments for global delivery
+- M&A, Data Center & HPC Program Management – Executing large-scale transitions, integrations, and migrations with precision and calm under pressure
+- Stakeholder & Executive Engagement – Translating technical complexity into strategic clarity that earns alignment, funding, and trust
+- AI-Enhanced Delivery & Productivity – Leveraging automation, analytics, and GenAI tools to accelerate insight, quality, and time-to-value
+- Risk, Change & Governance Management – Balancing innovation with compliance, security, and fiscal responsibility (aka budget alchemy)
+- Strategic Planning & Portfolio Execution – Connecting roadmaps to enterprise goals through measurable impact and continuous improvement
+- Agile / SAFe Frameworks – Delivering value iteratively across distributed teams while maintaining focus, momentum, and humor
+- Cloud & Infrastructure: Azure, AWS, GCP, VMware, Kubernetes, Terraform, Ansible, Jenkins, GitHub Actions, Azure DevOps
+- Security & Governance: Identity & Access Management (Ping, Azure AD, PIM), Tenable, Palo Alto DIG, Compliance (HITRUST, FISMA-Moderate, SOC2)
+- Data & Insights: Splunk, Grafana, ServiceNow, ADO Metrics, Cost & Performance Analytics
+- Automation & Scripting: Python, Bash, PowerShell, ARM Templates, Infrastructure-as-Code (IaC)
+- AI & Productivity: GenAI-assisted development, process automation, AI-driven insights and documentation
+- Frameworks & Methods: Agile, SAFe, ITIL, DevSecOps, Continuous Improvement, Change & Release Management
+- High-Performance Compute (HPC): Global R&D Cluster Management, Job Scheduling, Network Optimization, Data Throughput Tuning
 
 ---
 
@@ -27,6 +39,9 @@
 - Aha.io: Strategic planning abnd roadmap communication
 - GitHub: Software development and engineering Agile workload platform
 - CA Agile Central (Rally): Agile engineering workload platform
+- Confluence: Centralized documentation platform
+- Smartsheets: Cloud-based work management and automation platform
+- MS Project: Project & portfolio management
 - Figma: Visual product design & prototyping 
 - Miro: Collaborative discovery, systems thinking, and facilitation
 - Microsoft Co-pilot: AI productivity assitance / GenAI
@@ -34,7 +49,7 @@
 
 ---
 ## PROFESSIONAL EXPERIENCE
-**Director, Technical Product Management**
+**Principal Technical Product Management**
 [Optum](https://www.optum.com/en/about-us.html) | 2019-Present
    *“Wrangling chaos with a roadmap and a tea.”*
 - Built and led a multi-region product team to define and deliver core development infrastructure platforms used by 30k+ engineers, including Critical Business Application teams.
