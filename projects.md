@@ -1,6 +1,6 @@
 # Optum Technology
 
-## Director / Principal Tech Product & Portfolio Manager 		(2019-Present)
+## Director / Principal Tech Program & Product Portfolio Manager 		(2019-Present)
 - **Healthcare Platform** (*Portfolio Manager*): In early 2025, I was promoted to portfolio owner for our Optum HCP (Healthcare Platform) Engineering Platform. As the portfolio owner for the HCP Engineering Platform, my mission is to empower engineers to efficiently create high-quality healthcare applications. The platform serves as a centralized hub, offering effortless access to reusable components, collaborative tools, and best practices, which streamlines development and encourages cross-team innovation. Its value lies in expediting development cycles, improving consistency and quality, and enabling engineers to concentrate on delivering impactful healthcare solutions that advance progress within the broader healthcare ecosystem.
  
 - **Public Cloud Account Manager, Disposable Cloud Environment, Service Based Launchpad** (*Product Manager*): Building on these accomplishments, I oversaw the delivery of public cloud products, achieving rapid deployment of essential compliance and security measures, all while meeting challenging deadlines and cultivating strong stakeholder relationships.
