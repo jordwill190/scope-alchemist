@@ -1,11 +1,11 @@
 # 👋 Hello, I’m Jord Williams
 
-**Director of Technical Product Management**  
+**Principal Technical Program & Platform Management**  
 HPC Veteran | Infrastructure Whisperer | Chaos Tamer
 
 ---
 
-> “I don't just manage products—I shepherd platforms, tame wild infrastructure, and translate chaos into something engineers actually want to use.”
+> “I don't just manage products & projects — I shepherd platforms & programs, tame wild infrastructure, and translate chaos into something customers actually want to use, while keeping chaos on schedule since forever.”
 
 ---
 
@@ -16,12 +16,20 @@ Over the past 20 years, I've:
 - Built internal developer platforms used by thousands of engineers—without breaking production on a Friday
 - Led infrastructure and platform strategy across Fortune 5 and 49 orgs (yes, I’ve seen it all)
 - Scaled high-performance compute environments for global R&D teams before “cloud” was more than weather
+- Orchestrated infrastructure and security programs that kept mergers on track and auditors calm (simultaneously—no small feat)
+- Migrated data centers, applications, and entire business units without losing a single packet or stakeholder’s patience
+- Managed global HPC and infrastructure modernization projects before “cloud” became a strategy deck staple
+- Delivered cross-functional programs where success meant uptime, compliance, and occasionally, surviving budget season
 
 I specialize in:
 - Developer platforms & internal tooling as products  
 - Infrastructure strategy (on-prem, hybrid, cloudy with a chance of resilience)  
 - Technical storytelling with just enough slides to get funding  
 - Leading teams through architectural ambiguity, cultural shifts, and undocumented systems
+- Infrastructure & Security Program Management – orchestrating complex initiatives that bridge architecture, governance, and execution
+- M&A & Data Center Transitions – coordinating people, process, and platforms through the chaos of consolidation
+- Technical Storytelling & Stakeholder Alignment – translating engineering complexity into boardroom clarity—with minimal slides and maximum impact
+- Global High-Performance Compute Delivery – aligning R&D, finance, and operations for environments that push limits (but not SLAs)
 
 ---
 
@@ -47,10 +55,24 @@ More on [Projects](./projects.md)
 
 ## 📎 Philosophy (aka Things I Believe)
 
-- Platforms should **empower**, not **enforce**
+Programs should:
+-  **align**, not **collide**
+-  **steer** the ship, not **rearrange** deck chairs
+-  *Plans are **maps**, not **mandates***
+-  **enable** momentum, not **meetings**
+-  **connect** the dots, not **collect** them
+-  **orchestrate** outcomes, not **overhead**
+-  *Program management is where optimism meets Gantt charts*
+Platforms should:
+- **empower**, not **enforce**
+- **build** bridges, not **barriers**
+- **enable** velocity, not **vanity**
+- **guide**, not **gatekeep**
+- *Make the right thing, the easy thing*
+- *Frictionless by design, trusted by default*
 - Technical debt isn’t bad—*as long as you’re charging interest*
-- “It depends” is an acceptable answer—if followed by a diagram
-- Leadership is less about answers and more about unblocking smart people
+- “It depends” is an acceptable answer — *if followed by a diagram & Gannt chart*
+- *Leadership is less about answers and more about unblocking smart people*
 
 ---
 
@@ -69,4 +91,4 @@ More on [Projects](./projects.md)
 
 ---
 
-> “Reliable infrastructure. Scalable teams. Clear direction. All served with dry wit and a roadmap.”
+> “Reliable infrastructure. Scalable teams. Clear direction. All served with dry wit, a plan, and roadmap.”
