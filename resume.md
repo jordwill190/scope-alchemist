@@ -36,7 +36,7 @@ Recognized as an infrastructure whisperer and chaos tamer who blends technical f
 ---
 
 ## CURRENT TOOLING SKILLS
-- Aha.io: Strategic planning abnd roadmap communication
+- Aha.io: Strategic planning and roadmap communication
 - GitHub: Software development and engineering Agile workload platform
 - CA Agile Central (Rally): Agile engineering workload platform
 - Confluence: Centralized documentation platform
