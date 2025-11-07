@@ -67,8 +67,8 @@ Recognized as an infrastructure whisperer and chaos tamer who blends technical f
 [Optum](https://www.optum.com/en/about-us.html)  | 2010–2012
    *"Designs the systems that can't go down - and makes sure they don't, even when everything else does."*
 - Designed and implemented scalable, high-availability infrastructure solutions for Tier 0 services supporting Fortune 5 business-critical applications ensuring 99.99%+ uptime
-- Partnered with application owners and platform teams to architect resilient infrastructure that met strict SLAs for perforamnce, fault tolerance, and disaster recovery
-- Collaborated cross-functionally with product, security, and SRE teams to ensure infrastructure met compliance, observability, and scalability standards for Tier 0 systems
+- Partnered with application owners and platform teams to architect resilient infrastructure that met strict SLAs for performance, fault tolerance, and disaster recovery
+- Collaborated cross-functionally with product, security, and SRE teams to ensure infrastructure met compliance, observability, and scalability standards for CBA and Tier 0 systems
 
 **Principal IT Project Manager (Contractor)**
 [Holstadt Consulting](https://www.hollstadt.com/) to [United HealthGroup](https://www.unitedhealthgroup.com/) | 2008–2010
