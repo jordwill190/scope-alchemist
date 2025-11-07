@@ -63,6 +63,7 @@ Programs should:
 -  **connect** the dots, not **collect** them
 -  **orchestrate** outcomes, not **overhead**
 -  *Program management is where optimism meets Gantt charts*
+
 Platforms should:
 - **empower**, not **enforce**
 - **build** bridges, not **barriers**
