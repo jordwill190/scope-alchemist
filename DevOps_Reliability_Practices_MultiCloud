@@ -1,0 +1,129 @@
+### DevOps Reliability Practices: Ready-to-Use Checklist (Multi-Cloud Edition)  
+(Organized by the 4 Key Types of Activities every SRE/DevOps team actually does in production – now with Azure, AWS, and GCP examples)
+
+#### 1. Risk Reduction & Failure Prevention (Do these FIRST)
+- [ ] Classify every service as Critical / Pri-1 / Pri-2 / Pri-3 (use the table below)  
+- [ ] Write explicit SLOs + error budgets in code (Prometheus SLOs or OpenSLO yaml)  
+- [ ] Enforce error-budget-based deployment gates in CI/CD (budget < 10% → block non-hotfix deploys)  
+- [ ] Run quarterly Wheel of Misfortune game (real incidents, new joiners play the on-call)  
+- [ ] Mandate blameless postmortems for every P0/P1 (template: timeline + contributing factors + follow-up Jiras)
+
+#### 2. Production Hardening Playbooks (Copy-Paste into Runbooks)
+```markdown
+# Critical & Pri-1 Services (Multi-Cloud: Active-Active or Warm Standby)
+✓ AWS: Multi-region active-active OR warm-standby with RPO<60s, RTO<5min (e.g., RDS Multi-AZ + Global Accelerator)
+✓ Azure: Multi-AZ with Availability Zones + zone-redundant SQL DB (e.g., VMs in Availability Zones, az sql db create --availability-zone-redundant)
+✓ GCP: Regional Managed Instance Groups (MIGs) across zones + Cloud SQL HA (e.g., gcloud compute instance-groups managed create --size=2 --zones=us-central1-a,us-central1-b)
+✓ Cell-based architecture (shard by customer or tenant) across clouds
+✓ Feature flags for every new endpoint + auto-rollback on 5xx spike
+✓ Chaos Monkey + Gremlin attacks every Tuesday 10:00-10:30 AM ET (integrate with Azure Chaos Studio or GCP Fault Injection Simulator)
+✓ Separate on-call escalation path that wakes VP if error budget burns >50% in 2h
+
+# Pri-2 Services
+✓ AWS: Multi-AZ only, Auto Scaling min=2 (e.g., EC2 ASG across AZs)
+✓ Azure: Availability Sets/Zones, min=2 VMs (e.g., az vm availability-set create --sku Aligned)
+✓ GCP: Zonal MIGs with autohealing, min=2 instances (e.g., gcloud compute instance-groups managed create --size=2 --zone=us-central1-a)
+✓ Circuit breaker + 3 retries with jitter on all downstream calls
+✓ 15-day log + metrics retention in Splunk/Datadog
+✓ Monthly Game Day (kill one AZ, watch ALB/Azure LB/GCP ILB failover)
+
+# Pri-3 Services
+✓ AWS: Single AZ is OK, but ASG min=2
+✓ Azure: Basic Availability Set, ASG min=2 (e.g., az vm availability-set create)
+✓ GCP: Single-zone MIG, min=2 (e.g., gcloud compute instance-groups managed create --size=2)
+✓ Health checks + automated instance replacement
+✓ Weekly automated canary via Spinnaker/Flux/ArgoCD
+```
+
+#### 3. One-Click Recovery Runbooks (keep in PagerDuty Runbook field)
+```bash
+# Restore Critical database (RPO < 5 min) – Multi-Cloud
+# AWS
+aws rds restore-db-instance-to-point-in-time \
+  --source-db-instance-identifier prod-primary \
+  --target-db-instance-identifier prod-restore-$(date +%Y%m%d-%H%M) \
+  --restore-time $(date -u +"%Y-%m-%dT%H:%M:%SZ" --date '-5 minutes')
+
+# Azure
+az sql db restore \
+  --resource-group myRG \
+  --server myserver \
+  --name mydb \
+  --dest-name mydb-restore-$(date +%Y%m%d-%H%M) \
+  --time $(date -u +"%Y-%m-%dT%H:%M:%SZ" --date '-5 minutes')
+
+# GCP
+gcloud sql backups create \
+  --instance=prod-primary \
+  --backup-creation-time=$(date -u +"%Y-%m-%dT%H:%M:%SZ" --date '-5 minutes')
+
+# Failover Pri-1 Kubernetes workload to DR region – Multi-Cloud
+# AWS (EKS)
+kubectl config use-context dr-cluster
+kubectl patch deployment checkout -p '{"spec":{"template":{"spec":{"affinity":{"nodeAffinity":null}}}}}'
+kubectl rollout restart deployment/checkout
+
+# Azure (AKS)
+az aks get-credentials --resource-group myRG --name dr-aks-cluster
+kubectl patch deployment checkout -p '{"spec":{"template":{"spec":{"nodeSelector":null}}}}'
+kubectl rollout restart deployment/checkout
+
+# GCP (GKE)
+gcloud container clusters get-credentials dr-cluster --zone us-central1-a --project myproject
+kubectl patch deployment checkout -p '{"spec":{"template":{"spec":{"nodeSelector":null}}}}'
+kubectl rollout restart deployment/checkout
+```
+
+#### 4. Priority Classification Table (paste into Confluence)
+| Priority | Example | Availability Target | Max RTO | Max RPO | Required Patterns (Multi-Cloud) |
+|----------|---------|---------------------|---------|---------|---------------------------------|
+| Critical | Payment gateway, EHR write path | 99.99% | 60 sec | 0 sec | AWS: Multi-region active-active + cell routing (RDS Global + Route 53); Azure: Multi-AZ VMs + zone-redundant SQL + Traffic Manager failover; GCP: Regional MIGs + Cloud SQL HA + Cloud DNS failover |
+| Pri-1    | Login, checkout, claims submission | 99.9%  | 5 min  | 60 sec | AWS: Warm standby + pilot-light DR (EC2 ASG + Route 53); Azure: Availability Zones + Azure LB failover (az network lb rule create --load-distribution Default); GCP: Zonal MIGs + ILB failover (gcloud compute backend-services add-backend --failover) |
+| Pri-2    | Reporting, admin dashboards | 99.5%  | 1 hour | 15 min | AWS: Multi-AZ + automated failover (ELB + ASG); Azure: Availability Sets + LB health probes; GCP: Multi-zone MIGs + regional ILB (gcloud compute forwarding-rules create --region us-west1) |
+| Pri-3    | Internal tools, dev environments | 99%    | 4 hours| 4 hours| AWS: ASG + health-check replacement; Azure: Basic VMSS; GCP: Single-zone MIG + autohealing |
+
+#### 5. 2025-2026 Reliability Roadmap (copy into your OKRs)
+Q4 2025  
+☐ Migrate last Critical monolith to cell-based microservices (AWS: Lambda + Step Functions; Azure: Functions + Logic Apps; GCP: Cloud Run + Workflows)  
+☐ Implement priority-queue backpressure for all Pri-1 APIs (multi-cloud: SQS/AZ Service Bus/Pub/Sub)  
+
+Q1 2026  
+☐ Automate quarterly region-evacuation drill (Critical only: AWS: Route 53 failover; Azure: Traffic Manager; GCP: Cloud DNS failover)  
+☐ Reduce Pri-2 mean-time-to-recovery from 45 min → 18 min (cross-cloud health checks)  
+
+Q2 2026  
+☐ Achieve 100% SLO coverage across all services  
+☐ Error budget burn alerts → Slack #reliability-war-room  
+
+#### Bonus: 3 Commands Every Team Member Must Know
+```bash
+# 1. How much budget left this quarter? (Multi-Cloud Monitoring)
+# AWS
+aws cloudwatch get-metric-statistics --namespace AWS/SLO --metric-name ErrorBudgetRemaining --period 2592000 --start-time $(date -u +%Y-%m-%dT%H:%M:%SZ --date '-90 days') --end-time $(date -u +%Y-%m-%dT%H:%M:%SZ) --statistics Average
+
+# Azure
+az monitor metrics list --resource /subscriptions/{sub}/resourceGroups/{rg}/providers/Microsoft.Insights/components/{app} --metric ErrorBudgetRemaining --interval PT1H --start-time $(date -u +%Y-%m-%dT%H:%M:%SZ --date '-90d') --end-time $(date -u +%Y-%m-%dT%H:%M:%SZ)
+
+# GCP
+gcloud monitoring query 'fetch global | metric | error_budget_remaining | align | delta | 1d' --start-time=$(date -u +%Y-%m-%dT%H:%M:%SZ --date '-90d') --end-time=$(date -u +%Y-%m-%dT%H:%M:%SZ)
+
+# 2. Trigger controlled failover (Critical only)
+# AWS
+./runbook failover --service=payment --target-region=us-west-2
+
+# Azure
+az network lb rule update --resource-group myRG --lb-name myLB --name myRule --frontend-ip-config myFIP --backend-pool myBEP --load-distribution Default --probe-name myProbe
+
+# GCP
+gcloud compute backend-services update payment-backend --region us-central1 --failover-ratio 0.5
+
+# 3. See who broke the budget last week
+# AWS
+aws cloudwatch get-metric-statistics --namespace AWS/SLO --metric-name ErrorBudgetBurn --period 86400 --start-time $(date -u +%Y-%m-%dT%H:%M:%SZ --date '-7d') --end-time $(date -u +%Y-%m-%dT%H:%M:%SZ) --statistics Sum --query 'Datapoints[?Sum > 0.3]'
+
+# Azure (via Datadog or similar)
+az monitor metrics list --resource /subscriptions/{sub}/resourceGroups/{rg}/providers/Microsoft.Insights/components/{app} --metric ErrorBudgetBurn --interval PT1H --start-time $(date -u +%Y-%m-%dT%H:%M:%SZ --date '-7d') --end-time $(date -u +%Y-%m-%dT%H:%M:%SZ) | jq '.value[] | select(.average > 0.3)'
+
+# GCP
+gcloud monitoring query 'fetch global | metric | error_budget_burn | align | delta | 1d | group_by 1d, [value_error_budget_burn_mean: mean(value.error_budget_burn)] | every 1d' --start-time=$(date -u +%Y-%m-%dT%H:%M:%SZ --date '-7d') --end-time=$(date -u +%Y-%m-%dT%H:%M:%SZ) | grep -v ' > 0.3'
+```
